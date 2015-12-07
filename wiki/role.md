@@ -1,9 +1,9 @@
-# Role
+# role
 + Defines a mafia role
 
 ```
-name ["flavor-name"]
-    [*flavor-text*]
+name - [flavor-name]
+    [flavor-text]
     alignment
     [night-action]
     [day-action]

@@ -2,7 +2,7 @@
 + Defines a mafia setup
 
 ```
-name [type]
+name [set-type]
 
 [description]
 
