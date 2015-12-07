@@ -1,4 +1,4 @@
-# role
+#role
 + Defines a mafia role
 
 role ::=<br>
