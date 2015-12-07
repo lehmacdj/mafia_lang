@@ -1,6 +1,4 @@
 # string
 + Describes a string
-
-```
-word [word] [...]
-```
++ Consists of a collection of letters in a particular sequence
++ This collection is unquoted

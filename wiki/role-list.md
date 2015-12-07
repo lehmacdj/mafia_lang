@@ -1,10 +1,7 @@
 # role-list
 + A list of [roles](role.md)
 
-```
-role
+role-list ::=<br>
+[role](role.md)<br>
 
-[role]
-
-[...]
-```
+[[...](dots.md)]

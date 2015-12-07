@@ -1,4 +1,4 @@
 # flavor-name
 + Defines a flavor name for a card
 
-"[name](name.md)"
+flavor-name ::= "[name](name.md)"
