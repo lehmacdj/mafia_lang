@@ -2,7 +2,7 @@
 + Defines a mafia setup
 
 set ::=<br>
-&nbsp;&nbsp;&nbsp;&nbsp; [name](name.md) [[set-type](set-type.md)]<br>
+&nbsp;&nbsp;&nbsp;&nbsp; [name](name.md) [- [set-type](set-type.md)]<br>
 
 &nbsp;&nbsp;&nbsp;&nbsp; [[description](description.md)]<br>
 
