@@ -1,11 +1,10 @@
 # role
 + Defines a mafia role
 
-```
-name - [flavor-name]
-    [flavor-text]
-    alignment
-    [night-action]
-    [day-action]
-    win-condition
-```
+role ::=<br>
+[name](name.md) [- [flavor-name](flavor-name.md)]<br>
+    [[flavor-text](flavor-text.md)]<br>
+    [alignment](alignment.md)<br>
+    [[night-action](night-action.md)]<br>
+    [[day-action](day-action.md)]<br>
+    [win-condition](win-condition.md)<br>

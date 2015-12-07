@@ -1,10 +1,9 @@
 # Set
 + Defines a mafia setup
 
-```
-name [set-type]
+set ::=<br>
+[name](name.md) [[set-type](set-type.md)]<br>
 
-[description]
+[[description](description.md)]<br>
 
-role-list
-```
+[role-list](role-list.md)
