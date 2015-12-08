@@ -7,4 +7,4 @@
     + super-closed
     + themed
 
-set-type ::= open | semi-closed | [closed-identifier](closed-identifier.md) | super-closed | theme
+set-type ::= open | semi-closed | [closed-identifier](closed-identifier.md) | super-closed | themed
