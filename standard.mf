@@ -1,0 +1,68 @@
+Serial Killer
+  night
+    first
+      choose
+        night unkillable
+        uncheckable
+    every
+      kill 1
+  end
+    win if alone
+
+Doctor
+  night
+    every
+      protect 1
+  team
+    town
+
+Jailer
+  night
+    every
+      (protect & roleblock) 1
+  team
+    town
+
+Tracker
+  night
+    every
+      track 1
+  team
+    town
+
+Watcher
+  night
+    every
+      watch 1
+  team
+    town
+
+Mafia
+  night
+    first
+      discover allies
+    every
+      mutual kill 1
+  team
+    mafia
+
+Mafia Roleblocker
+  night
+    first
+      discover allies
+    every
+      mutual kill 1
+      roleblock 1
+  team
+    mafia
+
+Strongman
+  night
+    first
+      discover allies
+    every
+      mutual kill 1
+    once
+      guarantee kill
+  team
+    mafia
