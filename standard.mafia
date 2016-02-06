@@ -1,13 +1,4 @@
-Serial Killer
-  night
-    first
-      choose
-        night unkillable
-        uncheckable
-    every
-      kill 1
-  end
-    win if alone
+# Town Power Roles
 
 Doctor
   night
@@ -37,32 +28,43 @@ Watcher
   team
     town
 
+
+# Mafia Roles
+
 Mafia
   night
     first
       discover allies
     every
-      mutual kill 1
+      team kill 1
   team
     mafia
 
-Mafia Roleblocker
+Mafia Roleblocker extends Mafia
   night
-    first
-      discover allies
     every
-      mutual kill 1
       roleblock 1
-  team
-    mafia
 
-Strongman
+Strongman extends Mafia
+  night
+    once
+      guarantee team kill
+
+Mafia Concierge extends Mafia
+  night
+    every
+      check team 1
+
+
+# Third Parties
+
+Serial Killer
   night
     first
-      discover allies
+      choose
+        night unkillable
+        uncheckable
     every
-      mutual kill 1
-    once
-      guarantee kill
-  team
-    mafia
+      kill 1
+  end
+    win if alone
