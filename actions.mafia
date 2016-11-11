@@ -1,0 +1,21 @@
+-- the grammar of an action statement
+-- action <identifier> <arg-list> { <action> }
+
+-- For vig / mafia kills
+action kill $player {
+  killing[$player] := true
+}
+
+action {
+  dead[$player] := true
+}
+
+-- burning is the same as killing
+action burn $player {
+  kill $player
+}
+
+-- the action that an arsonist has
+action burn_all("burn all oiled players") {
+  dead[$player] where oiled[$player]
+}

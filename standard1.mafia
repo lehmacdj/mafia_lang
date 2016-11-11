@@ -1,0 +1,70 @@
+use mafia_rules
+
+# Town
+
+Town
+  team TOWN
+
+extends Town {
+
+  1-Shot Bulletproof
+    night passive
+      bulletproof 1
+
+  1-Shot Vigilante
+    night every
+      optional kill 1
+
+  Busdriver
+    night every
+      position swap 2
+
+  Dentist
+    night every
+      silence 1
+
+  Deputy
+    night every
+      if Sheriff dead
+        check 1
+
+  Doctor
+    night every
+      protect 1
+
+  Mason
+    night first
+      discover others
+
+  Mayor
+    day vote
+      tiebreak
+
+  Milkman
+    night every
+      give milk 1
+
+  Miller
+    passive
+      appear as team MAFIA
+
+  Sheriff
+    night every
+      check 1
+}
+
+Mafia
+  team MAFIA
+  night
+    first
+      discover others
+    every
+      mutual kill 1
+
+extends Mafia {
+
+  Mafia Roleblocker
+    night every
+      roleblock 1
+
+}

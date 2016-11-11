@@ -1,18 +1,12 @@
 # Town Power Roles
 
-Doctor
-  night
-    every
-      protect 1
-  team
-    town
+Doctor extends Town {
+  every night (protect 1)
+}
 
-Jailer
-  night
-    every
-      (protect & roleblock) 1
-  team
-    town
+Jailer extends Town {
+  every night ((roleblock & protect) 1)
+}
 
 Tracker
   night
