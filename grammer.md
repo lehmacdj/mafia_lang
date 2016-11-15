@@ -56,10 +56,16 @@ a list of variables, represented as space separated variables
         | ~int ~mathop ~int
 
 ## ~mathop
-    ~mathop ::= + | - | * | / | ^
+    ~mathop ::= + | - | * | /
 
 ## ~cmpop
     ~cmpop ::= > | < | >= | <=
 
 ## ~eqop
     ~eqop ::= = | <>
+
+## ~int_literal
+    ~int_literal ::= /-?[1-9][0-9]*/
+
+## ~type
+    ~type ::= string | integer | team | player | collection | action | predicate

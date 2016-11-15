@@ -1,12 +1,14 @@
 -- the grammar of an action statement
--- action <identifier> <arg-list> { <action> }
+-- action <identifier>(<description>) <arg-list> { <action> }
+-- yes the thing in the braces needs to be a singe action, however an implicit
+-- <then> is inserted at the end of every line
 
 -- For vig / mafia kills
 action kill $player {
   killing[$player] := true
 }
 
-action {
+action $player {
   dead[$player] := true
 }
 
