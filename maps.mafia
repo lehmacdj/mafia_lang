@@ -1,0 +1,8 @@
+-- A map is the defined using the collection keyword:
+--    map\<type,type\> <identifier> { <elems> }
+
+-- Players that are dead
+map<player,predicate> dead {}
+
+-- The players that may be killed
+map<player,predicate> killing {}
